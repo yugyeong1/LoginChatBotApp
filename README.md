@@ -10,7 +10,9 @@
 
 
 #### 📌 회원가입, 로그인  
-파이어베이스의 createUserWithEmailAndPassword 
+firebase 의 createUserWithEmailAndPassword 함수를 이용하여서 회원가입 기능 구현  
+firebase 의 signlnWithEmailAndPassword 함수를 이용하여서 로그인 기능 구현  
+  
 ![image](https://user-images.githubusercontent.com/104052659/220808706-985760fd-ac17-41ee-90b4-9c2d3e133d0d.png)
 ![image](https://user-images.githubusercontent.com/104052659/220808687-bef6debf-fea9-4ec1-bad1-095a4e3ed202.png)
 

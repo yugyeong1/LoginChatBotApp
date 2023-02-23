@@ -51,6 +51,19 @@ public class MainActivity extends AppCompatActivity {
         userNext = findViewById(R.id.userNext);
         chatList = findViewById(R.id.chatList);
 
+
+        // 채팅방 어댑터를 클릭했을때 이벤트 처리
+        chatList.setOnItemClickListener((parent, view, position, id) -> {
+            String chatName = (String) parent.getItemAtPosition(position); // 클릭한 아이템의 텍스트를 가져옴
+            // 선택한 채팅방으로 이동
+            Intent intent = new Intent(MainActivity.this, ChatActivity.class);
+            intent.putExtra("chatName", chatName);
+            intent.putExtra("email",email);
+            startActivity(intent);
+
+        });
+
+
         strEmail = getIntent().getStringExtra("email");
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
